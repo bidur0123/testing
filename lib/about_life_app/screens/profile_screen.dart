@@ -4,8 +4,15 @@ import 'package:widget_testing/screen/follower_counter/utils/text_utils.dart';
 import 'dart:convert';
 
 import '../components/clipper_up.dart';
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+class ProfileScreen extends StatefulWidget {
+  const ProfileScreen({Key? key}) : super(key: key);
+
+  @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,12 +31,9 @@ class ProfileScreen extends StatelessWidget {
                         end: Alignment.bottomCenter,
                         stops:const  [0.3,0.6],
                         colors: [
-
                           Colors.transparent,
                           Theme.of(context).scaffoldBackgroundColor
                         ],
-
-
                       ),
                     ),
                     decoration:const  BoxDecoration(
@@ -45,7 +49,11 @@ class ProfileScreen extends StatelessWidget {
                         backgroundImage: AssetImage("assets/myprofile.png"),
                       ),
                       SizedBox(height: 10,),
-                      TextUtils(text: "Dev_73arner",size: 20, isbold: true,),
+                      TextUtils(
+                        text: "Dev_73arner",
+                        size: 20,
+                       // isbold: true,
+                        ),
                       SizedBox(height: 10,),
                       TextUtils(text: "Member for 2 years",color: Color(0xff6d6d6d),),
                     ],
@@ -61,14 +69,22 @@ class ProfileScreen extends StatelessWidget {
                       children: [
                         Column(
                           children: [
-                            TextUtils(text: "10k",size: 20,isbold: true,),
+                            TextUtils(
+                              text: "10k",
+                              size: 20,
+                           //   isbold: true,
+                            ),
                             SizedBox(height: 5,),
                             TextUtils(text: "Followers",color: Color(0xff6d6d6d),),
                           ],
                         ),
                         Column(
                           children: [
-                            TextUtils(text: "125",size: 20,isbold: true,),
+                            TextUtils(
+                              text: "125",
+                              size: 20,
+                            //  isbold: true,
+                            ),
                             SizedBox(height: 5,),
                             TextUtils(text: "Following",color: Color(0xff6d6d6d),),
                           ],
@@ -88,7 +104,11 @@ class ProfileScreen extends StatelessWidget {
                             color:const  Color(0xff2b2b2b),
                           ),
                           alignment: Alignment.center,
-                          child:const  TextUtils(text: "Here to Help",size: 12,isbold: true,),
+                          child:const  TextUtils(
+                            text: "Here to Help",
+                            size: 12,
+                          //  isbold: true,
+                          ),
 
                         ),
                         Container(
@@ -99,7 +119,11 @@ class ProfileScreen extends StatelessWidget {
                             color:const  Color(0xfffa4d85),
                           ),
                           alignment: Alignment.center,
-                          child: const TextUtils(text: "I Need Help",size: 12,isbold: true,),
+                          child: const TextUtils(
+                            text: "I Need Help",
+                            size: 12,
+                          //  isbold: true,
+                          ),
 
                         ),
 
@@ -136,7 +160,10 @@ class ProfileScreen extends StatelessWidget {
                             alignment: Alignment.center,
                             child:const Icon(Icons.emoji_events,color: Colors.white,),
                           ),
-                          const TextUtils(text: "Achievements",isbold: true,),
+                          const TextUtils(
+                            text: "Achievements",
+                        //    isbold: true,
+                          ),
                           Stack(
                             children:  [
                               Container(
@@ -273,7 +300,10 @@ class ProfileScreen extends StatelessWidget {
                                             child:const TextUtils(text: "Hopeless",)
 
                                         ),
-                                        const   TextUtils(text: "I am having restless nights, it's hard",isbold: true,),
+                                        const   TextUtils(
+                                          text: "I am having restless nights, it's hard",
+                                        //  isbold: true,
+                                        ),
                                         Align(
                                           alignment: Alignment.bottomLeft,
                                           child: Container(
@@ -330,3 +360,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+

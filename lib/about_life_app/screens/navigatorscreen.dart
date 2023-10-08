@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widget_testing/about_life_app/screens/home_screen.dart';
+import 'package:widget_testing/about_life_app/screens/profile_screen.dart';
 import 'package:widget_testing/screen/follower_counter/screens/profile_screen.dart';
 class NavigatorScreen extends StatefulWidget {
   const NavigatorScreen({super.key});

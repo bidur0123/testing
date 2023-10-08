@@ -107,17 +107,11 @@ class WaterDropEffect extends StatelessWidget {
                         height: 20,
                         width: 20,
                         decoration: const BoxDecoration(
-
                             shape: BoxShape.circle,
-
                             boxShadow: [
                               BoxShadow(color: Colors.white,blurRadius: 5,offset: const Offset(5,6))]
-
                         ),
-
-
                       ),
-
                       Container(
                         height: 150,
                         width: 150,
@@ -126,13 +120,9 @@ class WaterDropEffect extends StatelessWidget {
                           //color: Colors.white
                           backgroundBlendMode: BlendMode.overlay,
                           gradient: LinearGradient(
-
                               colors: [Colors.black,Colors.white]
                           ),
-
                         ),
-
-
                       ),
                     ],
                   ),

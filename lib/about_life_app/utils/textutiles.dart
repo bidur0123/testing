@@ -8,7 +8,14 @@ class TextUtils extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text,style: TextStyle(color: color??Colors.white,fontSize: size??15,fontWeight: isbold==null?FontWeight.normal:FontWeight.w700),);
+    return Text(
+      text,
+      style: TextStyle(
+          color: color ?? Colors.white,
+          fontSize: size??15,
+          fontWeight: isbold==null ?  FontWeight.normal : FontWeight.w700
+      ),
+    );
   }
 }
 

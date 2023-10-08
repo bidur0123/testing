@@ -1,12 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../utils/text_utils.dart';
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+
+class ProfilePage extends StatefulWidget {
+  const ProfilePage({Key? key}) : super(key: key);
 
   @override
+  State<ProfilePage> createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
 
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -195,3 +201,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+

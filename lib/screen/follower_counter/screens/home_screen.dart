@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widget_testing/about_life_app/screens/profile_screen.dart';
 import 'package:widget_testing/screen/follower_counter/screens/profile_screen.dart';
 import 'package:widget_testing/screen/follower_counter/utils/graph_sections.dart';
 import '../utils/text_utils.dart';
@@ -48,7 +49,7 @@ class HomeScreen extends StatelessWidget {
 
           InkWell(
             onTap: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfileScreen()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfilePage()));
             },
             child: Container(
               margin:const  EdgeInsets.all(5),
