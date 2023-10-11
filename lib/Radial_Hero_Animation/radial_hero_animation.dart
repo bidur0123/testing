@@ -151,7 +151,7 @@ class RadialExpansionDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('RADIAL ANIMATION'),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.indigo,
       ),
       body: Container(
         padding: const EdgeInsets.all(33.0),
@@ -159,9 +159,9 @@ class RadialExpansionDemo extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            _buildHero(context, 'assets/mountain.jpeg', 'Aquaman'),
-            _buildHero(context, 'assets/mountain2.jpeg', 'Superman'),
-            _buildHero(context, 'assets/mountain3.jpeg', 'Wonderwoman'),
+            _buildHero(context, 'assets/mountain.jpeg', 'Mountain1'),
+            _buildHero(context, 'assets/mountain2.jpeg', 'Mountain2'),
+            _buildHero(context, 'assets/mountain3.jpeg', 'Mountain3'),
           ],
         ),
       ),

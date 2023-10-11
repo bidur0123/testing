@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget_testing/Radial_Hero_Animation/radial_hero_animation.dart';
-import 'package:widget_testing/bike_ui/screens/home_screen.dart';
-import 'package:widget_testing/hero_text_animation/screens/home_screen.dart';
-import 'package:widget_testing/screen/custom_3d_cube.dart';
-import 'package:widget_testing/screen/water_drop_effect.dart';
-import 'package:widget_testing/ui_3d/ui_3d.dart';
+import 'package:widget_testing/Skeleton_text/skeleton_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: RadialExpansionDemo(),
+      home: SkeletonText(),
     );
   }
 }
