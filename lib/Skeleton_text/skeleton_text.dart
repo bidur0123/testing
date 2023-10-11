@@ -13,6 +13,7 @@ class SkeletonText extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text("Skeleton Text"),
+          centerTitle: true,
           backgroundColor: Colors.green,
         ),
         // list of items in body
