@@ -68,10 +68,14 @@ class CardHiddenAnimationPageState extends State<CardHiddenAnimationPage>
       appBar: AppBar(
         backgroundColor: Colors.orange,
         title: const Text(
-            "Black Hole Animation"
+            "Black Hole Animation",
+          style: TextStyle(
+            color: Colors.white
+          ),
         ),
         centerTitle: true,
       ),
+      drawer: Drawer(),
       floatingActionButton: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
