@@ -65,6 +65,13 @@ class CardHiddenAnimationPageState extends State<CardHiddenAnimationPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.orange,
+        title: const Text(
+            "Black Hole Animation"
+        ),
+        centerTitle: true,
+      ),
       floatingActionButton: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
